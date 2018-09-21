@@ -6,7 +6,7 @@ import cifrado.vernam.alfabeto.Letra;
  * 
  * @author Ale Rocha
  *
- *	Clase que permitirá convertir un objeto de tipo letra a su código binario.
+ *	Clase que permitirÃ¡ convertir un objeto de tipo letra a su cÃ³digo binario.
  */
 public class CodigoBinario {
 	Letra letra;
@@ -15,12 +15,12 @@ public class CodigoBinario {
 	 * Constructor de la clase.
 	 * @param letra
 	 */
-	public CodigoBinario(String letra) {
-		this.letra = new Letra(letra);
+	public CodigoBinario(Letra letra) {
+		this.letra = new Letra(letra.letra);
 	}
 	
 	/**
-	 * Método para obtener el número binario de una letra.
+	 * MÃ©todo para obtener el nÃºmero binario de una letra.
 	 */
 	public String obtenerBinario(String letra) {
 	      return Integer.toBinaryString(letra.charAt(0));
@@ -31,8 +31,8 @@ public class CodigoBinario {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		Letra l = new Letra("Z");
-		CodigoBinario cb = new CodigoBinario(l.letra);
+		Letra l = new Letra("Ð·");
+		CodigoBinario cb = new CodigoBinario(l);
 		System.out.println(cb.obtenerBinario(l.letra));
 	}
 }

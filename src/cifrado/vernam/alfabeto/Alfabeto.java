@@ -11,7 +11,7 @@ public class Alfabeto {
 	String alfabeto;
 	
 	//Construtor de la clase.
-	private Alfabeto(String alfabeto) {
+	public Alfabeto(String alfabeto) {
 		this.alfabeto = new String(alfabeto);
 	}
 }
